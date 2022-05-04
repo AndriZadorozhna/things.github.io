@@ -1,0 +1,389 @@
+@media (max-width: 1350px) {
+    .rightHeader {
+        display: none;
+    }
+
+    .burgerBtn {
+        display: flex;
+    }
+}
+
+@media (max-width: 1250px) {
+    .kindOfWatchingBlock {
+        width: 400px;
+        padding: 30px 20px;
+        height: 550px;
+    }
+
+    .kindTextWrap {
+        width: 90%;
+    }
+
+    .trailerBlock{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .firstButtons {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 40px;
+    }
+
+    .character {
+        column-gap: 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .bird2,
+    .bird3 {
+        display: none;
+    }
+
+    .mainTitle {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .mainSubTitle {
+        font-size: 22px;
+        line-height: 26px;
+
+    }
+
+    .watchButton {
+        width: 250px;
+    }
+
+    .forthPage {
+        flex-direction: column;
+        height: fit-content;
+        padding: 80px 0;
+        row-gap: 50px;
+    }
+
+    .forthLeft img {
+        width: 200px;
+    }
+
+
+    .forthRight,
+    .forthLeft {
+        width: 90%;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .trailerBlock{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 930px) {
+    .secondPageBlocks {
+        display: none;
+    }
+
+    .secondPageBlocksMobile {
+        display: flex;
+    }
+
+    .thirdPageContent {
+        flex-direction: column;
+        row-gap: 70px;
+    }
+
+    .kindOfWatchingBlock {
+        height: 510px;
+        width: 550px;
+    }
+
+    .kindTextWrap {
+        width: 70%;
+    }
+}
+
+@media (max-width: 900px) {
+    .firsPage {
+        padding: 50px 60px;
+    }
+
+    .firstMainContent,
+    .firstButtons {
+        row-gap: 25px;
+    }
+
+    .episodeListBtn {
+        font-size: 26px;
+    }
+
+    .fifthPage {
+        height: fit-content;
+        padding-bottom: 50px;
+    }
+
+    .character {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .charLeft {
+        width: 100%;
+    }
+
+    .charTextNotMobile {
+        display: none;
+    }
+
+    .charLeft .moreBtn {
+        display: none;
+    }
+
+    .moreMobile {
+        display: block;
+    }
+
+    .rightArrow {
+        right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .firsMain img {
+        display: none;
+    }
+
+    .firstMainContent {
+        margin-top: 100px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .firstButtons {
+        align-items: center;
+    }
+
+    .logo h3 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .logoRectangle {
+        font-size: 36px;
+    }
+
+    .header {
+        flex-direction: row-reverse;
+    }
+
+    .thirdPage {
+        padding: 70px 40px;
+        min-height: fit-content;
+    }
+
+    .thirdPageContent {
+        display: none;
+    }
+
+    .thirdPageMobile {
+        display: flex;
+    }
+
+    .trailerBlock{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .carousel-item {
+        width: 500px;
+    }
+
+    .character {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .charTitle {
+        font-size: 20px;
+    }
+
+    .charText {
+        font-size: 18px;
+    }
+
+    .moreBtn {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .mainMobileBlock {
+        border: 2px solid black;
+    }
+
+    .mainMobileBlock h3 {
+        font-size: 20px;
+    }
+
+    .mobileBlockDescription {
+        font-size: 18px;
+    }
+
+    .secondPage {
+        min-height: fit-content;
+    }
+
+    .charRight img {
+        height: 300px;
+    }
+
+    .carousel-item {
+        width: 400px;
+    }
+
+    .trailerBlock{
+        padding: 10px;
+        font-size: 12px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo h3 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .logoRectangle {
+        font-size: 30px;
+        padding: 0 10px;
+    }
+
+    .firsPage {
+        padding: 40px 35px;
+        height: 750px;
+    }
+
+    .mainMobileBlock {
+        column-gap: 10px;
+    }
+
+    .pageTitle {
+        font-size: 24px;
+    }
+
+    .kindBlockMobile {
+        width: 350px;
+    }
+
+    .singInInput,
+    .singInBtn {
+        width: 100%;
+        height: 60px;
+        font-size: 25px;
+    }
+
+    .singInInput::placeholder {
+        font-size: 20px;
+    }
+
+    .forthLeft img {
+        width: 120px;
+    }
+
+    .footer {
+        justify-content: space-around;
+        height: 400px;
+        padding: 20px 0;
+    }
+
+    .footerBird {
+        right: 30px;
+        bottom: 100px;
+    }
+
+    .footerContent {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 10px;
+    }
+
+    .footerRight {
+        align-items: flex-start;
+        row-gap: 10px;
+    }
+
+    .footerLeft,
+    .footerRight h4 {
+        font-size: 20px;
+    }
+
+    .trailerWrap{
+        width: 100%;
+    }
+
+    .trailerBlock{
+        font-size: 10px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px) {
+    .carousel-item {
+        width: 300px;
+    }
+
+    .charRight img {
+        height: 200px;
+    }
+
+    .charLeft {
+        width: 280px;
+    }
+
+    .trailerBlock{
+        font-size: 10px;
+        width: 95%;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .header {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .burgerBtn {
+        align-self: flex-end;
+    }
+
+    .bird4 {
+        top: 200px;
+    }
+
+    .bird1,
+    .bird4 {
+        width: 60px;
+    }
+
+    .secondPage {
+        padding: 60px 20px;
+    }
+
+    .kindBlockMobile {
+        width: 300px;
+    }
+}
+
+@media (max-width: 350px) {
+    .firsPage {
+        padding: 30px 20px;
+    }
+}

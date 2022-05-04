@@ -1,0 +1,677 @@
+body {
+    margin: 0;
+    font-family: 'Epilogue', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*
+font-family: 'Anton', sans-serif;
+font-family: 'Numans', sans-serif;
+font-family: 'Epilogue', sans-serif;
+*/
+
+/*-------------------MAIN--------------------*/
+
+.firsPage {
+    width: 100%;
+    height: 100vh;
+    background: #D8CAC7;
+    padding: 50px 130px;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Anton', sans-serif;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.logo h3 {
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 98px;
+    text-transform: uppercase;
+}
+
+.logoRectangle {
+    padding: 0 16px;
+    color: #FCFCFC;
+    font-size: 48px;
+    background: #D32436;
+    height: fit-content;
+    text-transform: uppercase;
+}
+
+.linkHeader {
+    text-decoration: none;
+    color: black;
+    font-family: 'Numans', sans-serif;
+    font-size: 28px;
+}
+
+.rightHeader {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.linkHeader:hover {
+    color: #AC1212;
+}
+
+.firsMain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    z-index: 4;
+}
+
+.firstMainContent {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+
+}
+
+.mainTitle {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 49px;
+}
+
+.mainSubTitle {
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 34px;
+}
+
+.firstButtons {
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+    font-family: 'Numans', sans-serif;
+}
+
+.watchButton {
+    width: 325px;
+    height: 80px;
+    background: #B7152C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 33px;
+    color: white;
+    cursor: pointer;
+}
+
+.episodeListBtn {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+}
+
+.bird {
+    position: absolute;
+    z-index: 1;
+}
+
+.bird1 {
+    bottom: 30px;
+    left: 40px;
+}
+
+.bird2 {
+    top: 300px;
+    right: 600px;
+}
+
+.bird3 {
+    right: 330px;
+    bottom: 30px;
+}
+
+.bird4 {
+    top: 130px;
+    right: 10px;
+}
+
+/*--------------Burger--------------*/
+
+.burgerBtn {
+    display: none;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.burgerPart {
+    width: 50px;
+    height: 6px;
+    border-radius: 3px;
+    background: #000;
+    cursor: pointer;
+}
+
+.burgerMenu {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    background-color: #AC1212;
+    padding: 20px;
+    width: 200px;
+    display: none;
+    transition: .2s;
+    z-index: 6;
+}
+
+.burgerMenu .linkHeader:hover {
+    color: white;
+}
+
+.active {
+    display: block;
+
+}
+
+
+/*--------------Why I should watch?--------------*/
+
+.secondPage {
+    width: 100%;
+    min-height: 100vh;
+    background: #EEEEECE3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 50px 120px;
+}
+
+.pageTitle {
+    font-weight: 700;
+    font-size: 32px;
+    color: #AC1212;
+    text-align: center;
+}
+
+.secondPageBlocks {
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+    flex-wrap: wrap;
+    row-gap: 100px;
+}
+
+.secondPageBlock {
+    height: 280px;
+    width: 380px;
+    background: #D8CAC7;
+    border-radius: 20px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    position: relative;
+}
+
+.sBlockTitle {
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+}
+
+.sBlockText {
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+.sBlockImg {
+    position: absolute;
+    top: -80px;
+}
+
+.secondPageBlocksMobile {
+    display: none;
+    flex-direction: column;
+    row-gap: 50px;
+    margin-top: 50px;
+}
+
+.mainMobileBlock {
+    padding: 10px;
+    border: 4px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+}
+
+.arrowDown {
+    cursor: pointer;
+}
+
+.spBlockMobile {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.mainMobileBlock h3 {
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.mobileBlockDescription {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+
+/*-----------What kind of watching I prefer?-----------*/
+
+.thirdPage {
+    min-height: 100vh;
+    width: 100%;
+    background: #D4CECA;
+    padding: 100px 100px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thirdPageContent {
+    margin-top: 100px;
+    display: flex;
+    column-gap: 100px;
+}
+
+.kindOfWatchingBlock {
+    height: 510px;
+    width: 550px;
+    background: #FCFCFC;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.kindTextWrap {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    row-gap: 20px;
+
+}
+
+.kindTitle {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.kindText {
+    font-size: 25px;
+}
+
+.kindImg {
+    position: absolute;
+    top: -50px;
+    right: -10px;
+}
+
+.watchBtn {
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 30px;
+    padding: 3px 6px;
+    border-bottom: 3px solid black;
+    cursor: pointer;
+}
+
+.buyBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    margin-top: -10px;
+}
+
+.oldPrice {
+    font-size: 25px;
+    text-decoration: line-through;
+}
+
+.newPrice {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.buyBtn {
+    width: 216px;
+    height: 64px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 32px;
+    color: white;
+    background: #AC1212;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.thirdPageMobile {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    margin-top: 50px;
+}
+
+.kindBlockMobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+    border: 2px solid white;
+    width: 400px;
+}
+
+.kindBlockMobile:hover {
+    border-color: black;
+}
+
+.kbmLeft {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.kbmLeft h4 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: -9px;
+}
+
+.kbmLeft p {
+    font-size: 18px;
+    margin-bottom: -5px;
+}
+
+.plus {
+    cursor: pointer;
+}
+
+.thirdPageMobile .watchBtn {
+    margin: 0;
+}
+
+/*-----------Sign in here-----------*/
+
+.forthPage {
+    width: 100%;
+    height: 100vh;
+    background: #EBEAE9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forthLeft,
+.forthRight {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fRightContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.fRightContent .pageTitle {
+    width: 70%;
+}
+
+.singInInput {
+    width: 70%;
+    height: 90px;
+    padding: 10px 40px;
+    font-size: 30px;
+    border: none;
+    outline: none;
+}
+
+.singInInput::placeholder {
+    font-size: 30px;
+    color: black;
+}
+
+.singInBtn {
+    width: 70%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #AC1212;
+    font-weight: 700;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.singInBtn:hover,
+.buyBtn:hover {
+    background-color: #fff;
+    color: #AC1212;
+    border: 4px solid #AC1212;
+}
+
+
+/*---------Characters-------*/
+
+.fifthPage {
+    width: 100%;
+    height: 100vh;
+    background: #D8CAC7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.leftArrow {
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+}
+
+.rightArrow {
+    position: absolute;
+    right: -50px;
+}
+
+.carousel {
+    width: 90%;
+    padding-left: 5%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-inner {
+    margin-top: 50px;
+    width: 100%;
+
+}
+
+.carouselBlock {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.character {
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+}
+
+.charLeft {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.charTitle {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.charText {
+    font-size: 25px;
+}
+
+.moreBtn {
+    width: fit-content;
+    font-weight: 700;
+    font-size: 25px;
+    color: #AC1212;
+    border-bottom: 3px solid #AC1212;
+}
+
+.moreMobile {
+    display: none;
+    width: 100%;
+}
+
+/*-----------------Footer----------------*/
+
+.footer {
+    width: 100%;
+    height: 500px;
+    background: #D4CECA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    position: relative;
+}
+
+.footerLeft {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.footerContent {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 20px;
+}
+
+.footerRight h4 {
+    font-weight: 800;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0;
+
+}
+
+.footerIcons {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.footerBird {
+    position: absolute;
+    right: 35%;
+    bottom: 140px;
+    z-index: 0;
+}
+
+.trailer {
+    width: 100%;
+    padding: 4%;
+    background-color: #EBEAE9;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.trailerWrap {
+    height: fit-content;
+    width: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.trailer video {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.trailerBlock {
+    width: 70%;
+    position: absolute;
+    padding: 20px;
+    background-color: #D8CAC7;
+    font-size: 32px;
+    text-align: center;
+}
